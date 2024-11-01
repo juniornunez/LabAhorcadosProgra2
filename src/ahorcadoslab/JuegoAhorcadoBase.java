@@ -9,6 +9,7 @@ package ahorcadoslab;
  * @author Junior Nuñez
  */
 public abstract class JuegoAhorcadoBase implements JuegoAhorcado {
+
     protected String palabraSecreta;
     protected String palabraActual;
     protected int intentos;

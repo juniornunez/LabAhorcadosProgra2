@@ -6,7 +6,7 @@ package ahorcadoslab;
 
 /**
  *
- * @author Junior Nuñes
+ * @author Junior Nuñez
  */
 public interface JuegoAhorcado {
     void inicializarPalabraSecreta();

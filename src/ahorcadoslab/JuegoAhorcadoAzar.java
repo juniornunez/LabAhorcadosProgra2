@@ -6,12 +6,13 @@ package ahorcadoslab;
 
 /**
  *
- * @author Junior Nuñes
+ * @author Junior Nuñez
  */
 import java.util.List;
 import java.util.Random;
 
 public abstract class JuegoAhorcadoAzar extends JuegoAhorcadoBase {
+
     private AdminPalabrasSecretas admin;
 
     public JuegoAhorcadoAzar(AdminPalabrasSecretas admin) {
@@ -25,12 +26,12 @@ public abstract class JuegoAhorcadoAzar extends JuegoAhorcadoBase {
         Random random = new Random();
         palabraSecreta = palabras.get(random.nextInt(palabras.size()));
         palabraActual = "_".repeat(palabraSecreta.length());
-        intentos = 6; 
+        intentos = 6;
     }
 
     @Override
     public void jugar() {
-       
+
     }
 
     @Override
@@ -53,4 +54,4 @@ public abstract class JuegoAhorcadoAzar extends JuegoAhorcadoBase {
     public boolean hasGanado() {
         return palabraActual.equals(palabraSecreta);
     }
-} 
+}

@@ -6,7 +6,7 @@ package ahorcadoslab;
 
 /**
  *
- * @author Junior Nuñes
+ * @author Junior Nuñez
  */
 public abstract class JuegoAhorcadoFijo extends JuegoAhorcadoBase {
 

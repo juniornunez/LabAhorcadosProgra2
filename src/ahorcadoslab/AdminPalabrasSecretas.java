@@ -20,8 +20,13 @@ public class AdminPalabrasSecretas {
         palabras = new ArrayList<>();
     }
 
-    public void agregarPalabra(String palabra) {
+    public boolean agregarPalabra(String palabra) {
+        palabra = palabra.toLowerCase();
+        if (palabras.contains(palabra)) {
+            return false;
+        }
         palabras.add(palabra);
+        return true;
     }
 
     public List<String> getPalabras() {
@@ -30,7 +35,7 @@ public class AdminPalabrasSecretas {
 
     public String seleccionarPalabraAlAzar() {
         if (palabras.isEmpty()) {
-            throw new IllegalStateException("No hay palabras en la lista.");
+            throw new IllegalStateException("No hay palabras en la lista");
         }
         Random random = new Random();
         return palabras.get(random.nextInt(palabras.size()));

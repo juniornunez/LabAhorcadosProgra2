@@ -252,7 +252,7 @@ public class GUI extends JFrame {
                 setVisible(true);
             }
         });
-
+        
         establecerFijoButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
